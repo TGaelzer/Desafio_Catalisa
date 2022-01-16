@@ -11,8 +11,8 @@ const especieDoPersonagem3 = document.querySelector ('#especie3');
 const statusVida1 = document.querySelector ('#status');
 const statusVida2 = document.querySelector ('#status2');
 const statusVida3 = document.querySelector ('#status3');
+var imagens = ['#img1', '#img2', '#img3']
 
-var gerarTime = [pegarPersonagem1, pegarPersonagem2, pegarPersonagem3]
 
 gerarValorAleatorio = () => {
     return Math.floor(Math.random() * 671);
@@ -34,6 +34,7 @@ pegarPersonagem1 = () => {
         statusVida1.innerHTML = data.status;
     });
 }
+
 
 pegarPersonagem2 = () => {  
     let numeroAleatorio = gerarValorAleatorio();
@@ -69,4 +70,4 @@ pegarPersonagem3 = () => {
     });
 }
 
-botao.onclick = gerarTime;
+botao.onclick = pegarPersonagem1;
