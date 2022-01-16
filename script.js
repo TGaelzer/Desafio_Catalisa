@@ -75,5 +75,3 @@ botao.addEventListener('click', e =>{
     pegarPersonagem2();
     pegarPersonagem3();
 });
-
-//botao.onclick = pegarPersonagem1(), pegarPersonagem2(), pegarPersonagem3();
