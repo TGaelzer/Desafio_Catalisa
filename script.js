@@ -30,7 +30,7 @@ pegarPersonagem1 = () => {
         imagem1.src = data.image;
         imagem1.alt = data.name;
         nomeDoPersonagem1.innerHTML = data.name;
-        especie1.innerHTML = data.species;
+        especie.innerHTML = data.species;
         statusVida1.innerHTML = data.status;
     });
 }
