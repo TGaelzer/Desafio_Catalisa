@@ -11,7 +11,6 @@ const especieDoPersonagem3 = document.querySelector ('#especie3');
 const statusVida1 = document.querySelector ('#status');
 const statusVida2 = document.querySelector ('#status2');
 const statusVida3 = document.querySelector ('#status3');
-var imagens = ['#img1', '#img2', '#img3']
 
 
 gerarValorAleatorio = () => {
@@ -70,4 +69,11 @@ pegarPersonagem3 = () => {
     });
 }
 
-botao.onclick = pegarPersonagem1(), pegarPersonagem2(), pegarPersonagem3();
+botao.addEventListener('click', e =>{
+    e.preventDefault(); 
+    pegarPersonagem1();
+    pegarPersonagem2();
+    pegarPersonagem3();
+});
+
+//botao.onclick = pegarPersonagem1(), pegarPersonagem2(), pegarPersonagem3();
