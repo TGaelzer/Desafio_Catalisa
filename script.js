@@ -70,4 +70,4 @@ pegarPersonagem3 = () => {
     });
 }
 
-botao.onclick = pegarPersonagem1;
+botao.onclick = pegarPersonagem1(), pegarPersonagem2(), pegarPersonagem3();
